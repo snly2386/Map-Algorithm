@@ -79,12 +79,14 @@ describe 'graph' do
     graph.addEdge("Tokyo", "Helsinki", 200)
     graph.addEdge("Tokyo", "Seoul", 300)
     graph.addEdge("Taipei","Seoul", 100 )
+    graph.addEdge("Tokyo", "Austin", 50)
 
 
   end
 
   it "returns shortest distance between 2 nodes" do 
     expect(graph.shortest_distance("Austin", "Helsinki")).to eq(600)
+
   end
 
 end 
